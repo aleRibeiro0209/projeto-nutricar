@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!--A tag head e tudo dentro dela não aparecem aos usuários ela é utilizada para colocar parametros como por exemplo fontes-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriCar Market</title>
+
+    <!-- Links para os arquivos .css utilizados na estilização da página. -->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/fontes.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+    <!-- Link para o icone da página -->
+    <link rel="shortcut icon" href="./src/imagens/favicon.png" type="image/x-icon">
+
+    <!-- Link para a fonte chalet no google -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/chalet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<!--A tag body é o corpo do site, utilizada para a interação com os usuários-->
+
+<body>
+
+    <!--Cabeçaho do site, muito semelhante a uma barra de navegação-->
+    <header class="cabecalho">
+
+        <!--A tag div é utilizada para agrupar elementos-->
+        <div class="logo">
+            <a href="https://nutricarbrasil.com/" target="_blank"><img src="./src/imagens/logo-nutricar.png" alt="Logo nutricar brasil" style="cursor: pointer;"></a>
+            <hr>
+            <h1>NutriCar</h1>
+            <h2>Market</h2>
+        </div>
+
+        <!--A tag nav é utilizada para criar o menu de navegação-->
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#cadastre-condominio">Cadastre-se</a>
+                </li>
+                <li>
+                    <a href="https://nutricarbrasil.com/quero-ser-um-cliente-nutricar/" target="_blank">Suporte <img
+                            src="./src/imagens/icone-link.svg" alt="Icone de link de suporte"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Home do site, seção príncipal(inicial) do site-->
+    <main class="home" id="home">
+        <img class="imagem-fundo" src="./src/imagens/bg-main.png" alt="Imagem de unidade NutriCar">
+
+        <!--Div para agrupar as informações, logo e botão-->
+        <div class="informacoes">
+
+            <div class="logo-frase-efeito">
+                <h1>Sempre aberto</h1>
+                <img src="./src/imagens/logo-nutricar.png" alt="Logo nutricar brasil">
+                <h1>Sempre por perto</h1>
+            </div>
+
+            <h1 class="titulo">Seu <strong>Mercado 24H</strong> por <strong>dia</strong></h1>
+            <p class="texto">
+                Já imaginou um Mini Mercado dentro do seu <strong style="color: rgb(147, 179, 58);">condomínio?</strong>
+            </p>
+            <a class="btn-cadastro" href="#cadastre-condominio">Cadastre-se agora</a>
+        </div>
+    </main>
+
+    <!--Seção do site, área de Cadastro-->
+    <section class="cadastre-condominio" id="cadastre-condominio">
+        <h2 class="titulo">Cadastre seu condomínio</h2>
+
+        <!--Div para agrupar as tags e desenvolver o cartão-->
+        <div class="cartao">
+            <img class="unidade-nutricar" src="./src/imagens/unidade-nutricar.png" alt="Imagem de uma unidade nutricar">
+
+            <!--Div para agrupar as informações e logos dos fornecedores-->
+            <div class="informacoes">
+                <h3>NutriCar Brasil</h3>
+                <p>
+                    Seu mini-mercado de <strong>auto-atendimento</strong> disponível <strong>24horas por dia, 7 dias por
+                        semana</strong>
+                </p>
+
+                <ul class="fornecedores">
+                    <li>
+                        <img src="./src/imagens/logo-bauducco.png" alt="Fornecedor 1" style="width: 150px;">
+                    </li>
+                    <li>
+                        <img src="./src/imagens/logo-cocacola.png" alt="Fornecedor 2" style="width: 150px;">
+                    </li>
+                    <li>
+                        <img src="./src/imagens/logo-milka.png" alt="Fornecedor 3" style="width: 150px;">
+                    </li>
+                    <li>
+                        <img src="./src/imagens/logo-elmachips.png" alt="Fornecedor 4" style="width: 150px;">
+                    </li>
+                </ul>
+            </div>
+
+            <!--Botão para abrir o formulário de solicitação desejada-->
+            <button class="btn-formulario">
+                Preencha o formulário de solicitação
+
+                <!-- Formulário -->
+               <form class="formulario-solicitacao" action="none" method="post">
+
+                   <div class="nome">
+                       <label for="nome">Nome</label>
+                       <input class="form-nome" type="text" id="nome" placeholder="Digite seu nome"/>
+                   </div>
+
+                   <div class="email">
+                       <label for="email">E-mail</label>
+                       <input class="form-email" type="email" id="email" placeholder="Digite seu e-mail" />
+                   </div>
+
+                   <div class="condominio">
+                       <label for="condominio">Nome do Condomínio</label>
+                       <input class="form-condominio" type="nome" id="condominio" placeholder="Digite o nome do condomínio" />
+                   </div>
+                   
+                   <div class="cep-condominio">
+                       <label for="cep-condominio">CEP</label>
+                       <input class="form-cep-condominio" type="number" id="cep-condominio" placeholder="00000-000"/>
+                   </div>
+
+                   <a class="btn-solicitacao" href="#home">Solicitar para seu condomínio</a>
+            </form>
+            </button>
+        </div>
+    </section>
+
+    <!-- Link para o arquivo .js para deixar o site "inteligente" -->
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+/* Resetando alguns estilos que vem por padrão do navegador como por exemplo:(margem e espaço entre o elemento e a margem). E chama a propriedade box-sizing para facilitar na hora de declarar o tamanho das imagens e elementos do html */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Resetanto o estilo das minhas uls(Listas desordenadas) */
+ul {
+    list-style: none;
+}
+
+/* Resetando a âncora dos links e mudando as cores para "herdado" */
+a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -1,0 +1,245 @@
+body {
+    background-color: #282828;
+    color: #fff;
+}
+
+.cabecalho {
+    height: 80px;
+    background-color: #0b0b0b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 2px solid #282828;
+}
+
+.cabecalho .logo {
+    display: flex;
+    gap: 15px;
+    
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 30px;
+
+}
+
+.cabecalho .logo img{
+    width: 50px;
+}
+
+.cabecalho .logo h1{
+    font-family: "ChaletComprime";
+    font-size: 50px;
+    align-items: center;  
+}
+
+.cabecalho .logo h2{
+    display: flex;
+    color: rgb(147, 179, 58);
+    font-family: "ChaletComprime";
+    font-size: 50px;
+    align-items: self-end;
+
+}
+
+.cabecalho .menu li a {
+    padding: 30px;
+    color: #e8e8e8;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Chalet';
+}
+
+.cabecalho .menu li a:hover {
+    color: rgb(147, 179, 58);
+    border-bottom: 2px solid rgb(147, 179, 58);
+}
+
+.home {
+    display: flex;
+    position: relative;
+    min-height: calc(100vh - 80px);
+}
+.home::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%);
+}
+
+.home .imagem-fundo {
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .informacoes {
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 80px 80px 80px 170px;
+    max-width: 780px;
+}
+
+.home .informacoes img {
+    max-width: 150px;
+}
+
+.home .informacoes .logo-frase-efeito {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .informacoes .logo-frase-efeito h1 {
+    font-size: 18px;
+    font-family: 'Chalet';
+    text-transform: uppercase;
+}
+
+.home .informacoes .titulo {
+    font-family: 'ChaletComprime';
+    font-size: 55px;
+    text-transform: uppercase;
+} 
+
+.home .informacoes .texto {
+    font-family: 'Chalet';
+    font-size: 25px;
+    line-height: 1.6;
+}
+
+.btn-cadastro, .btn-formulario, .btn-solicitacao {
+    background-color: rgba(255, 255, 255, .1);
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    font-family: 'ChaletComprime';
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all .3s ease-in;
+}
+
+.btn-formulario, .btn-solicitacao {
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn-cadastro:hover {
+    background-color: rgb(147, 179, 58);
+    color: #382D15;
+    border: 0.5px solid #382D15;
+    transform: scale(1.1);
+}
+
+.cadastre-condominio .unidade-nutricar {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.cadastre-condominio {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+}
+
+.cadastre-condominio .titulo {
+    font-family: 'ChaletComprime';
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.cadastre-condominio .cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    width: 50%;
+    border-radius: 10px;
+    padding: 80px;
+    gap: 40px;
+}
+
+.cadastre-condominio .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cadastre-condominio .informacoes h3 {
+    font-family: 'ChaletComprime';
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.cadastre-condominio .informacoes p {
+    color: #e8e8e8;
+    font-family: 'Chalet';
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.cadastre-condominio .informacoes .fornecedores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+
+}
+
+.cadastre-condominio .btn-formulario .formulario-solicitacao{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all .3s ease-in;
+    display: none;
+    opacity: 0;
+}
+
+/* Será aplicado apenas quando a class .formulario-solicitacao dentro da classe .btn-formulario e .cadastre-condominio, receber a classe ativo por meio do JavaScript */
+.cadastre-condominio .btn-formulario .formulario-solicitacao.ativo {
+    display: flex;
+    opacity: 1;
+}
+
+.nome, .email, .condominio, .cep-condominio {
+    display: column;
+    padding: 10px 0px;
+    justify-content: center;
+}
+
+.form-nome, .form-email, .form-condominio, .form-cep-condominio{
+    padding: 15px 10px;
+    height: 20px;
+    width: 300px;
+    border-radius: 8px;
+    border: none;
+    background-color: #282828;
+    color: #e8e8e8;
+    font-size: 15px;
+    font-family: 'Chalet';
+    text-align: center;
+}
+
+.btn-formulario .formulario-solicitacao .nome label, .email label, .condominio label, .cep-condominio label{
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Chalet';
+}

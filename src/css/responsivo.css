@@ -1,0 +1,79 @@
+/* Altera as propriedades dos seletores selecionados apenas apartir do momento em que a largura máxima da tela for de 1024px */
+@media (max-width: 1850px){
+
+    /* Alterando as propriedades da tag header para deixar o site responsivo */
+    .cabecalho {
+        height: 118px;
+        justify-content: center;
+        flex-direction: column;
+        padding: 50px 0;
+        gap: 15px;
+    }
+
+    .cabecalho .menu li a {
+        padding: 15px;
+    }
+
+    /* Alterando as propriedades da tag main para deixar o site responsivo */
+    .home .informacoes {
+        padding: 30px;
+    }
+
+    .home .informacoes img {
+        max-width: 100px;
+    }
+
+    .home .informacoes .titulo {
+        font-size: 40px;
+    }
+
+    /* Alterando as propriedades da tag section para deixar o site responsivo */
+    .cadastre-condominio .cartao {
+        width: 70%;
+    }
+}
+
+/* Altera as propriedades dos seletores selecionados apenas apartir do momento em que a largura máxima da tela for de 768px */
+@media (max-width: 1100px){
+    
+    /* Alterando as propriedades da tag section para deixar o site responsivo */
+    .cadastre-condominio {
+        padding: 30px;
+    }
+
+    .cadastre-condominio .cartao {
+        padding: 80px 20px;
+        width: 100%;
+    }
+
+    .cadastre-condominio .informacoes h3 {
+        font-size: 35px;
+    }
+
+    .cadastre-condominio .informacoes .fornecedores {
+        flex-direction: column;
+    }
+
+    /* Alterando as propriedades da tag button para deixar o site responsivo tanto na tag main quanto na tag section */
+    .btn-formulario {
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+    .btn-cadastro {
+        width: 100%;
+    }
+}
+
+/* Altera as propriedades dos seletores selecionados apenas apartir do momento em que a largura máxima da tela for de 425px */
+@media (max-width: 760px){
+    
+    /* Alterando o gradiente para ter uma melhor leitura do conteúdo escrito */
+    main::after{
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.4) 100%, transparent 65%);
+    }
+
+    .btn-formulario .formulario-solicitacao input {
+        width: 100%;
+    }
+}

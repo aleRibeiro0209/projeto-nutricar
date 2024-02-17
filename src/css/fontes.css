@@ -1,0 +1,5 @@
+/* Importa uma fonte local para o arquivo .HTML */
+@font-face {
+    font-family: 'ChaletComprime';
+    src: url("../fontes/ChaletComprime.ttf");
+}
