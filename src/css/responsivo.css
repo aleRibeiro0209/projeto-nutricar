@@ -70,7 +70,7 @@
     
     /* Alterando o gradiente para ter uma melhor leitura do conteúdo escrito */
     main::after{
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5) 100%, transparent 65%);
+        background: linear-gradient(90deg, rgba(0, 0, 0, .05), rgba(0, 0, 0, .5) 100%, transparent 65%);
     }
 
     .btn-formulario .formulario-solicitacao input {
